@@ -1,0 +1,3 @@
+intro: "<start_of_turn>user\nConsider the following list of available nodes and corresponding actions: "
+prefix: "\n\nGenerate the sequence of nodes required to complete the following task: "
+suffix: "\n\nn.b.: Provide only the sequence of nodes required to complete the task. <end_of_turn><start_of_turn>model"
