@@ -1,0 +1,42 @@
+- prompt: Navigate to a new page after a delay of 3 seconds when the user clicks a button.
+  nodes:
+    - "[OnClick]"
+    - "[Delay]"
+    - "[Navigate]"
+
+- prompt: Fetch user data and display it in a modal when a button is clicked.
+  nodes:
+    - "[OnClick]"
+    - "[FetchData]"
+    - "[DisplayModal]"
+
+- prompt: Reduce a list of scores to find the highest score and log the result.
+  nodes:
+    - "[Reduce]"
+    - "[Log]" 
+
+- prompt: Cache fetched data to improve performance and display the data on the screen.
+  nodes:
+    - "[FetchData]"
+    - "[CacheData]"
+    - "[Show]"
+
+- prompt: Log a message when a key is pressed and display the key value on the screen.
+  nodes:
+    - "[OnKeyPress]"
+    - "[Log]"
+    - "[Show]"
+
+- prompt: Highlight an element when the mouse enters it and remove the highlight when the mouse leaves.
+  nodes:
+    - "[OnMouseEnter]"
+    - "[Highlight]"
+    - "[OnMouseLeave]"
+    - "[Show]"
+
+- prompt: Filter out items that are out of stock and sort the remaining items by price before displaying them on the screen.
+  nodes:
+    - "[Filter]"
+    - "[Sort]"
+    - "[Show]"
+
