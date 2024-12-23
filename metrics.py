@@ -3,6 +3,26 @@ import yaml
 
 def get_metrics(model, examples):
 
+    """
+    Computes metrics for a Text2NodeSeq model given a list of examples.
+
+    Parameters
+    ----------
+    model : Text2NodeSeq
+        The model to be evaluated.
+    examples : list
+        A list of examples, each containing a prompt, the expected node sequence, and the generated node sequence.
+
+    Returns
+    -------
+    A dictionary with the following metrics:
+        - precision
+        - recall
+        - f1_score
+        - exact_match
+        - near_match
+    """
+    
     TP, FP, FN, EM, NM = 0, 0, 0, 0, 0
     for example in examples:
 
