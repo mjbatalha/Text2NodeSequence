@@ -1,9 +1,15 @@
 import gradio as gr
 from model import Text2NodeSeq
 
+
 model = Text2NodeSeq()
 
+
 with gr.Blocks() as interface:
+
+    """
+    Setup Gradio web browser interface.
+    """
 
     gr.Markdown("# Text to Sequence of Nodes")
     gr.Markdown("Enter a text prompt to generate a sequence of nodes based on your input.")
@@ -24,5 +30,6 @@ with gr.Blocks() as interface:
 
 
 if __name__ == "__main__":
-    interface.launch()
+
+    interface.launch(server_name="0.0.0.0", server_port=7000)
 
